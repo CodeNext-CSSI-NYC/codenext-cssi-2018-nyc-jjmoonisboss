@@ -5,3 +5,21 @@ console.log("Hey! What's 1 + 1?");
 console.log("It's " + 1 + 1 + " of course!");
 console.log("No, it's " + (1 + 1) + ", silly goose!");
 // console.log("This isn't going to get printed, is it?");
+
+
+
+// var num1 = 20;
+// var num2 = num1 + 5;
+// console.log(num2);
+
+// var num1 = 3;
+// var num2 = 10;
+// num1 = num1 + num2;
+// console.log(num1)
+
+//
+// var num1 = 7 % 4;
+// console.log(num1);
+
+var num1 = 10 % 2;
+console.log(num1);
