@@ -23,3 +23,13 @@ console.log("No, it's " + (1 + 1) + ", silly goose!");
 
 var num1 = 10 % 2;
 console.log(num1);
+
+var num1 =3;
+
+var num2 =52;
+
+ var num3 = num2 % num1;
+
+ num1 =num3 - 1;
+
+console.log(num1)
