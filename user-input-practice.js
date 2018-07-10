@@ -17,5 +17,14 @@
    let ranWord = readline.question("Enter any word,please make it appropriate though: ");
    console.log("Your word ' " + ranWord + " ' starts with the letter "+ ranWord.charAt(0) );
 // 4. Ask the user to enter two numbers, and print out "The average of ___ and ___ is ____", but with the blanks filled in.
-  let  oneNums =readline.question("Please enter one number here:");
-  console.log( "The average")
+  let  oneNums =readline.question("Please enter one number here: ");
+  let twoNums = readline.question("Please enter another number here: ");
+  let ave = parseInt(oneNums) + parseInt(twoNums);
+  console.log("The average of " + oneNums + " and " + twoNums  + " is " + ave / 2  );
+
+
+//find the max
+let  nums =readline.question("Please enter one number here: ");
+let doubleNums =readline.question("Please enter another number here: ");
+let tripleNums =readline.question("Please enter one more number here: ");
+console.log("The max number out of " + nums + ", " + doubleNums  + " and "  + tripleNums + " is " +  Math.max([nums,[doubleNums,[tripleNums]]]));
