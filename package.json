@@ -18,5 +18,6 @@
   "homepage": "https://github.com/CodeNext-CSSI-NYC/codenext-cssi-2018-nyc-jjmoonisboss#readme",
   "dependencies": {
     "readline-sync": "^1.4.9"
-  }
+  },
+  "devDependencies": {}
 }
