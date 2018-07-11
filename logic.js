@@ -43,3 +43,8 @@
  let a = 1;
  2 == a++;
 // Your guess:false
+
+
+
+if(x) { x +!x;   if (x== false){ x=x==x;} else { x=x && !x;}}
+console.log(x);
