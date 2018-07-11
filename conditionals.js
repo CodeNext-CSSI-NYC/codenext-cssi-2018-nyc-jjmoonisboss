@@ -31,12 +31,13 @@ else {
 }
 // 3. Ask the user for a number and print whether it is odd or even
 let eveOh= readline.question("Give me a number, it can be any number: ");
-if (eveOh %= 0) {
-console.log("Your number is an even number!!")}
-else if (evenOh == 0){
+if (eveOh % 2 == 0) {
+console.log("Your number is an even number!!");}
+else if (eveOh == 0){
   console.log("You're number isssss ZEROOOOOO ");
+}
 else{
-  console.log("Your number is an odd number")
+  console.log("Your number is an odd number");
 }
 
 // 4. Ask the user to enter a letter and tell them if it is a vowel or consonant
@@ -44,18 +45,15 @@ else{
 // b = 1;
 // c = 2;
 // d = 3;
-let vowConst =readline.question("Enter a letter any letter (my fav is 'j' what's yours ?): ")
+let vowConst =readline.question("Enter a letter any letter (my fav is 'j' what's yours ?): ");
 if (vowConst == "a"||vowConst == "e"||vowConst =="i"||vowConst =="o"||vowConst =="u"){
-  console.log("Your letter is a vowellll!")
-}
-else if (vowConst == "y"){
-  console.log("your letter is a semi-vowel! coolio <3")
-}
-else if (vowConst =="j"){
-  console.log("10/10 consonant! best letter")
-}
-else if (vowConst !="a"||vowConst !="e"||vowConst !="i"||vowConst !="o"||vowConst !="u") {
-  console.log("your letter is a consonant")
+  console.log("Your letter is a vowellll!");
+} else if (vowConst == "y") {
+  console.log("your letter is a semi-vowel! coolio <3");
+} else if (vowConst =="j"){
+  console.log("10/10 consonant! best letter");
+} else if (vowConst !="a"||vowConst !="e"||vowConst !="i"||vowConst !="o"||vowConst !="u") {
+  console.log("your letter is a consonant");
 }
 
 // 5. Ask the user to enter a year, and tell them if it was a leap year.
@@ -63,11 +61,11 @@ else if (vowConst !="a"||vowConst !="e"||vowConst !="i"||vowConst !="o"||vowCons
 console.log("******************************************************************")
 console.log("Welcome to the leap year discoverer!")
 let daYear = readline.question("Please enter a year, any year (yes even 2016 *dun dun dun*): ");
-if (daYear / 4){
-  console.log(daYear +  " is a leap year<3 ")
+if (daYear % 4==0 ){
+  console.log( "Yay "+ daYear+ " is a leap year <3 ");
 }
 else {
-  console.log("Sorry " + daYear + " isn't a leap year </3")
+  console.log("Sorry "+daYear + " isn't a leap year </3");
 }
 console.log("******************************************************************")
 
@@ -77,3 +75,31 @@ console.log("******************************************************************"
 // 7. Write a program that asks the user to enter a whole number 1-7 and prints out the corresponding day of the week.
 // If you want another challenge, look up how to use switch statements and use a switch instead of if-else for this.
 // Note that we usually don't bother with switch statements unless there are more than a few elses.
+let lolNope = readline.question("pick a number 1-7")
+if (lolNope==1){
+  console.log("Its monday booooo...");
+}
+else if (lolNope==2){
+  console.log("Taco tuesday yayyy!");
+}
+else if (lolNope==3){
+    console.log("'On Wensdays we wear pink!'");
+}
+else if (lolNope==4){
+    console.log("Thank god it's thursday.");
+}
+else if (lolNope==5){
+    console.log("It's Friday ! Friday! gotta get down on friday.");
+}
+else if (lolNope==6){
+    console.log("HECK YE its Saturdayyy!");
+}
+else if(lolNope==7){
+    console.log("Its sunday time for church.");
+}
+else if (lolNope>=8){
+  console.log( "I SAID 1-7!!")
+}
+else if (lolNope<=8){
+  console.log( "I SAID 1-7!!")
+}
