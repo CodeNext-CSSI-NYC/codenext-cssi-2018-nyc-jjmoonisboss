@@ -3,7 +3,7 @@
 
 // 1a. Write (declare) a function that prints out "meow"
 function makeNoise(){
-  console.log("meow");
+  console.log("meow!");
 }
 // // 1b. Call it three times in a row. Run your code to make sure it works.
 makeNoise();
