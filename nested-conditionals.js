@@ -6,14 +6,14 @@
 // If they say m, print out mushroom. If they say p, print out pepper.
 const readline = require("readline-sync");
 const frV = readline.question("Do you like fruits or vegtables? ");
-if (frV == "fruit"|| frV=="fruits"|| frV=="f"){
+if (frV == "fruit" || frV == "fruits" || frV == "f") {
   let aB = readline.question("A or B? ")
-  if (aB== "a" ){
+  if (aB == "a") {
     console.log("******************************************************************")
     console.log("An apple a day keeps the doc.")
     console.log("******************************************************************")
 
-  }else{
+  } else {
     console.log("******************************************************************")
     console.log("Yeah i like bananas, they're pretty good!")
     console.log("******************************************************************")
@@ -21,14 +21,14 @@ if (frV == "fruit"|| frV=="fruits"|| frV=="f"){
   }
 
 
-}else if (frV=="vegtables"|| frV=="veggies"||frV=="v"||frV=="plants"){
+} else if (frV == "vegtables" || frV == "veggies" || frV == "v" || frV == "plants") {
   let mP = readline.question("M or P? ")
-  if (mP== "m" ){
+  if (mP == "m") {
     console.log("******************************************************************")
     console.log("I personally dpn't like mushrooms , but you do you boo~")
     console.log("******************************************************************")
 
-  }else{
+  } else {
     console.log("******************************************************************")
     console.log("Peppers are good ! i really like bell peppers in rice or eating red peppers..")
     console.log("******************************************************************")
@@ -44,14 +44,14 @@ if (frV == "fruit"|| frV=="fruits"|| frV=="f"){
 // Tell them the formula depending on what they chose.
 // For example, if they said square and perimeter, you could print: 4 * s
 const sR = readline.question("square or rectangle?: ");
-if (sR == "square"|| frV=="s"){
+if (sR == "square" || frV == "s") {
   let sQ = readline.question("alrighty then area or perimeter?: ")
-  if (sQ== "a" ){
+  if (sQ == "a") {
     console.log("******************************************************************")
     console.log("l x w")
     console.log("******************************************************************")
 
-  }else{
+  } else {
     console.log("******************************************************************")
     console.log("s+s+s+s")
     console.log("******************************************************************")
@@ -59,14 +59,14 @@ if (sR == "square"|| frV=="s"){
   }
 
 
-}else if (rS=="rectangle"|| rS=="r"){
+} else if (rS == "rectangle" || rS == "r") {
   let rS = readline.question("alrighty then area or perimeter?: ")
-  if (rT== "a" ){
+  if (rT == "a") {
     console.log("******************************************************************")
     console.log("l x w")
     console.log("******************************************************************")
 
-  }else{
+  } else {
     console.log("******************************************************************")
     console.log("l+l+w+W")
     console.log("******************************************************************")
@@ -88,11 +88,13 @@ if (sR == "square"|| frV=="s"){
 
 let jms = readline.question("Welcome to JJ's moon shack , how may i take your order? ")
 let smj = readline.question("alrighty then would you likes a Value meal or the singles meal ")
-if (smj== "value meal"|| smj== "vm"|| smj==" value please" ){
+if (smj == "value meal" || smj == "vm" || smj == " value please") {
   let wow = readline.question(" Now would you like the burger or chicken?")
-   if (wow== "burger"|| wow == "b"){
-     console.log("Your total is $7.00")
-   }else{     console.log("Your total is $6.00")}
+  if (wow == "burger" || wow == "b") {
+    console.log("Your total is $7.00")
+  } else {
+    console.log("Your total is $6.00")
+  }
 }
 
 
@@ -103,16 +105,11 @@ if (smj== "value meal"|| smj== "vm"|| smj==" value please" ){
 
 
 
-
-
-}else if(mn == "singles meal"|| smj== "sm"|| smj==" singles please" )
-let rS = readline.question("alrighty then area or perimeter?: ")
-if (rT== "a" ){
-  console.log("******************************************************************")
-  console.log("l x w")
-  console.log("******************************************************************")
-
-}else{
-  console.log("******************************************************************")
-  console.log("l+l+w+W")
-  console.log("******************************************************************")
+} else if (mn == "singles meal" || smj == "sm" || smj == " singles please")
+  let wow = readline.question(" Now would you like the burger or chicken?")
+if (wow == "burger" || wow == "b") {
+  console.log("Your total is $7.00")
+} else {
+  console.log("Your total is $6.00")
+}
+}
