@@ -62,6 +62,7 @@
 // You will need to do this on two separate lines.
 // How many numbers should be in your array when the for loop is done?
 // Print out the array and the array's length at the end and make sure you are right.
+
 // function eau(arr) {
 //   let kirb = [];
 //   for (let i = 0; i <= 10; i++) {
@@ -113,7 +114,7 @@
 // 2: Seattle
 // 3: LA
 // 4: San Diego
-
+//
 // let cities = ["washington", "franklin", "salem", "geogetown", "madison"];
 // for (let i = 0; i <= cities.length - 1; i++) {
 //   let city = cities[i];
@@ -133,14 +134,14 @@
 // When it is done running, you should see something like [4, 36, 16, 9, 1, 49]
 
 
-let arrAy = ["6", "12", "18", "24", "36"];
-let squares = [];
-for (let i = 0; i <= arrAy.length - 1; i++) {
-  let num = arrAy[i];
-
-}
-
-
+// let arrAy = ["6", "12", "18", "24", "36"];
+// let squares = [];
+// for (let i = 0; i <= arrAy.length - 1; i++) {
+//   let num = arrAy[i] ** 2;
+//   console.log(num);
+// }
+//
+//
 
 
 
@@ -156,11 +157,23 @@ for (let i = 0; i <= arrAy.length - 1; i++) {
 // Note that, since we are looping backwards, we will be adding the numbers from the end first.
 // At the end, print out both the original and new array.
 // Assuming your original array was [2,6,4,3,1,7] ...
-// When it is done running, you should see [7, 1, 3, 4, 6, 2] (it was reversed!)
+// // When it is done running, you should see [7, 1, 3, 4, 6, 2] (it was reversed!)
 
+// function coolCool(arr) {
+//   let arRay = [4, 6, 8, 22, 24, 26];
+//   let reverse = [];
+//   for (i = arRay.length - 1; i >= 0; i--) {
+//     let nuM = arRay[i];
+//     reverse.push(nuM);
+//     console.log(arRay);
+//     console.log(reverse);
+//   }
+//
+// }
+// coolCool();
 
-
-// 8. Make a new empty array.
+// 8. Make a
+// new empty array.
 // Ask the user how many letters they would like to type in.
 // Use a for loop to loop that many times.
 // Each time through the loop, ask the user to enter a letter. Add that letter to the array.
@@ -169,6 +182,17 @@ for (let i = 0; i <= arrAy.length - 1; i++) {
 // For example, if they type in 4, and then type in c, a, k, e when asked
 // Then at the end it should just say "cake"
 
+let readline = require("readline-sync")
+let array = [];
+let letters = readline.question("How many letters would you like to type in?: ");
+for (i = 0; i < letters; i++) {
+  let q1 = readline.question("please enter your letter: ");
+  array.push(q1);
+  let str = array.join("");
+  // the word builds up
+  console.log("Your word is " + str);
+}
+
 
 
 // 9. Make a new empty array.
@@ -176,9 +200,10 @@ for (let i = 0; i <= arrAy.length - 1; i++) {
 // When that is done, create another for loop that goes throught this array and,
 // one at a time, prints out each item, so that you can see which items were added.
 // Do NOT just print the whole array at once. Get them one at a time and print them.
+let arraY = [];
+for (let i = 0; i <= 10; i++) {
 
-
-
+}
 // 10. We will make a deck of cards -- sort of.
 // Create an empty array called deck.
 // Make a for loop that goes from 1 to 13.
