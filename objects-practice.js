@@ -38,26 +38,44 @@
 // The purpose of the previous two things is to make sure you know both ways to
 // access values in objects using keys. Make sure you can do both.
 
-let anotherObj = {
-  "name": "Red",
-  "age": 15,
-  "likesExercise": true,
-  "needsBow": false
-}
-console.log(anotherObj);
-delete anotherObj.needsBow
-//your opinion is invalid let her wear her brown
-anotherObj.hasShorts = true;
-anotherObj.age = 17;
-console.log(anotherObj);
-let myVal = anotherObj["name"];
-console.log(anotherObj["age"]);
-
-// 3. Write a function that takes a string as input and returns an object
+// let anotherObj = {
+//   "name": "Red",
+//   "age": 15,
+//   "likesExercise": true,
+//   "needsBow": false
+// }
+// console.log(anotherObj);
+// delete anotherObj.needsBow
+// //your opinion is invalid let her wear her brown
+// anotherObj.hasShorts = true;
+// anotherObj.age = 17;
+// console.log(anotherObj);
+// let myVal = anotherObj["name"];
+// console.log(anotherObj["age"]);
+//
+// // 3. Write a function that takes a string as input and returns an object
 // whose key-value pairs are counts of the number of times each letter appears.
 function letterCount(str) {
-
+  let strinG = " just dance gonna be okay";
+  let letterCounter = {};
+  for (let i = 0; i < strinG.length; i++) {
+    let letter = strinG[i];
+    if (letterCounter[letter] == undefined) {
+      letterCounter[letter] = 1;
+    } else {
+      letterCounter[letter]++;
+    }
+  }
+  console.log(letterCounter);
+  let letters = Object.keys(letterCounter);
+  console.log(letters);
+  for (let i = 0; i < letters.length; i++) {
+    let letter = letters[i];
+    let count = letterCounter[letter];
+    console.log("The letter " + letter + " appeared " + count + " times");
+  }
 }
+letterCount();
 // For example, letterCount("mississippi") would return something like:
 // {
 //   m: 1,
@@ -75,6 +93,7 @@ function letterCount(str) {
 // 4. Write a function that takes a string as input and returns a different string
 // that contains each letter in the original string exactly once.
 function eachLetterOnce(str) {
+  let str = array.join("");
 
 }
 // So eachLetterOnce("mississippi") would return "misp" (letters may be in another order).

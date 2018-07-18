@@ -12,17 +12,17 @@
 // Print out the second-to-last value in the array again, but this time,
 // use the length property and subtraction (e.g. arr[arr.length + 3], though +3 is wrong).
 
-let arg = ["5", "10", "15", "20", "25"];
-let secondValue = arg[1];
-console.log(arg[2]);
-arg.splice(3, 1, '0');
-let lastVal = arg.pop();
-console.log(lastVal);
-arg[4] = "524";
-arg[5] = "76";
-console.log(arg[4]);
-console.log(arg[arg.length - 4]);
-// console.log(arg);
+// let arg = ["5", "10", "15", "20", "25"];
+// let secondValue = arg[1];
+// console.log(arg[2]);
+// arg.splice(3, 1, '0');
+// let lastVal = arg.pop();
+// console.log(lastVal);
+// arg[4] = "524";
+// arg[5] = "76";
+// console.log(arg[4]);
+// console.log(arg[arg.length - 4]);
+// // console.log(arg);
 
 
 
@@ -31,14 +31,14 @@ console.log(arg[arg.length - 4]);
 // Do NOT just print out the whole array with a command like console.log(arr).
 // Make sure you actually print out each item in the array one at a time.
 // What if there were 100 items in the array? 1000?
-//
-let ary = ["2", "4", "6", "8", "10"];
-console.log(ary[0]);
-console.log(ary[1]);
-console.log(ary[2]);
-console.log(ary[3]);
-console.log(ary[4]);
-//
+// //
+// let ary = ["2", "4", "6", "8", "10"];
+// console.log(ary[0]);
+// console.log(ary[1]);
+// console.log(ary[2]);
+// console.log(ary[3]);
+// console.log(ary[4]);
+// //
 
 
 // 2b. Create an empty array.
@@ -46,15 +46,15 @@ console.log(ary[4]);
 // What if you needed to add 100 items to the array, or 1000?
 // Hopefully these examples illustrate how helpful for loops can be.
 
-function ari() {
-  let aru = [];
-  aru.push("grapes");
-  aru.push("chicken strips");
-  aru.push("birds");
-
-  console.log(aru);
-}
-ari();
+// function ari() {
+//   let aru = [];
+//   aru.push("grapes");
+//   aru.push("chicken strips");
+//   aru.push("birds");
+//
+//   console.log(aru);
+// }
+// ari();
 
 // 3. Make a new empty array.
 // Set up a for loop that will run ten times. Think carefully to make sure it will run ten times.
@@ -63,15 +63,15 @@ ari();
 // How many numbers should be in your array when the for loop is done?
 // Print out the array and the array's length at the end and make sure you are right.
 
-function eau(arr) {
-  let kirb = [];
-  for (let i = 0; i <= 10; i++) {
-    kirb.push("324");
-    kirb.push("324");
-  }
-  console.log(kirb);
-}
-eau();
+// function eau(arr) {
+//   let kirb = [];
+//   for (let i = 0; i <= 10; i++) {
+//     kirb.push("324");
+//     kirb.push("324");
+//   }
+//   console.log(kirb);
+// }
+// eau();
 
 
 // 4. Make an array that contains four foods.
@@ -91,12 +91,12 @@ eau();
 // plum
 // PLUM
 //
-let foods = ["rice", "butter beans", "oxtail", "fried dumplings"];
-for (let i = 0; i <= foods.length - 1; i++) {
-  let eat = foods[i];
-  console.log(eat);
-  console.log(eat.toUpperCase());
-}
+// let foods = ["rice", "butter beans", "oxtail", "fried dumplings"];
+// for (let i = 0; i <= foods.length - 1; i++) {
+//   let eat = foods[i];
+//   console.log(eat);
+//   console.log(eat.toUpperCase());
+// }
 
 
 
@@ -115,11 +115,11 @@ for (let i = 0; i <= foods.length - 1; i++) {
 // 3: LA
 // 4: San Diego
 //
-let cities = ["washington", "franklin", "salem", "geogetown", "madison"];
-for (let i = 0; i <= cities.length - 1; i++) {
-  let city = cities[i];
-  console.log(i + ":" + city);
-}
+// let cities = ["washington", "franklin", "salem", "geogetown", "madison"];
+// for (let i = 0; i <= cities.length - 1; i++) {
+//   let city = cities[i];
+//   console.log(i + ":" + city);
+// }
 
 // 6. Make an array that contains six numbers.
 // Also make a new, separate empty array called squares.
@@ -134,13 +134,13 @@ for (let i = 0; i <= cities.length - 1; i++) {
 // When it is done running, you should see something like [4, 36, 16, 9, 1, 49]
 
 
-let arrAy = ["6", "12", "18", "24", "36"];
-let squares = [];
-for (let i = 0; i <= arrAy.length - 1; i++) {
-  let num = arrAy[i] ** 2;
-  console.log(num);
-}
-
+// let arrAy = ["6", "12", "18", "24", "36"];
+// let squares = [];
+// for (let i = 0; i <= arrAy.length - 1; i++) {
+//   let num = arrAy[i] ** 2;
+//   console.log(num);
+// }
+//
 
 
 
@@ -159,18 +159,18 @@ for (let i = 0; i <= arrAy.length - 1; i++) {
 // Assuming your original array was [2,6,4,3,1,7] ...
 // // When it is done running, you should see [7, 1, 3, 4, 6, 2] (it was reversed!)
 
-function coolCool(arr) {
-  let arRay = [4, 6, 8, 22, 24, 26];
-  let reverse = [];
-  for (i = arRay.length - 1; i >= 0; i--) {
-    let nuM = arRay[i];
-    reverse.push(nuM);
-    console.log(arRay);
-    console.log(reverse);
-  }
-
-}
-coolCool();
+// function coolCool(arr) {
+//   let arRay = [4, 6, 8, 22, 24, 26];
+//   let reverse = [];
+// for (i = arRay.length - 1; i >= 0; i--) {
+//   let nuM = arRay[i];
+//   reverse.push(nuM);
+//   console.log(arRay);
+//   console.log(reverse);
+// }
+//
+// }
+// coolCool();
 
 // 8. Make a
 // new empty array.
@@ -182,18 +182,18 @@ coolCool();
 // For example, if they type in 4, and then type in c, a, k, e when asked
 // Then at the end it should just say "cake"
 
-let readline = require("readline-sync")
-let array = [];
-let letters = readline.question("How many letters would you like to type in?: ");
-for (i = 0; i < letters; i++) {
-  let q1 = readline.question("please enter your letter: ");
-  array.push(q1);
-  let str = array.join("");
-  // the word builds up
-  console.log("Your word is " + str);
-}
-
-
+// let readline = require("readline-sync")
+// let array = [];
+// let letters = readline.question("How many letters would you like to type in?: ");
+// for (i = 0; i < letters; i++) {
+//   let q1 = readline.question("please enter your letter: ");
+//   array.push(q1);
+//   let str = array.join("");
+//   // the word builds up
+//   console.log("Your word is " + str);
+// }
+//
+//
 
 // 9. Make a new empty array.
 // Write a for loop that run ten times. Each time, it should add one random number to your array.
@@ -201,15 +201,15 @@ for (i = 0; i < letters; i++) {
 // one at a time, prints out each item, so that you can see which items were added.
 // Do NOT just print the whole array at once. Get them one at a time and print them.
 //
-let arraY = [];
-for (let i = 0; i <= 10; i++) {
-  let ran = parseInt(Math.random() * 100);
-  arraY.push(ran);
-}
-for (var i = 0; i < arraY.length; i++) {
-  console.log(arraY[i]);
-  // console.log(random)
-}
+// let arraY = [];
+// for (let i = 0; i <= 10; i++) {
+//   let ran = parseInt(Math.random() * 100);
+//   arraY.push(ran);
+// }
+// for (var i = 0; i < arraY.length; i++) {
+//   console.log(arraY[i]);
+//   // console.log(random)
+// }
 
 
 // 10. We will make a deck of cards -- sort of.
@@ -230,32 +230,34 @@ for (var i = 0; i < arraY.length; i++) {
 // Something like: ["Aclubs", "Adiamonds", "Aspades", "Ahearts", "2Clubs", "2Diamonds", ...]
 
 let deck = [];
+parseInt(Math.random() * 13);
 for (let i = 0; i <= 13; i++) {
   for (var j = 0; j < 4; j++) {
     let sTr = "";
     if (j == 1) {
-      j + "clubs";
+      sTr = sTr + "clubs";
     } else if (j == 2) {
-      j + "diamonds";
+      sTr = sTr + "diamonds";
     } else if (j == 3) {
-      j + "spades";
+      sTr = sTr + "spades";
     } else if (j == 4) {
-      j + "hearts";
+      sTr = sTr + "hearts";
     }
-    sTr + deck[j];
+
+    if (i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
+      sTr = i + sTr;
+    } else if (i == 1) {
+      sTr = "a" + sTr;
+    } else if (i == 11) {
+      sTr = "j" + sTr;
+    } else if (i == 12) {
+      sTr = "q" + sTr;
+    } else if (i == 13) {
+      sTr = "k" + sTr;
+    }
+    console.log(deck.push(sTr));
+    // console.log(deck.length);
   }
-  let sTr = "";
-  if (i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
-    "i" + sTr;
-  } else if (i == 1) {
-    "a" + sTr;
-  } else if (i == 11) {
-    "j" + sTr;
-  } else if (i == 12) {
-    "q" + sTr;
-  } else if (i == 13) {
-    "k" + sTr;
-  }
+  // sTr + deck[j];
+
 }
-console.log(deck);
-console.log(deck.length);
