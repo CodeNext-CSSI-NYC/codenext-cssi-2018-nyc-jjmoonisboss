@@ -87,7 +87,7 @@ console.log(chara[0][4]);
 // and other cases with fruits that are not.
 
 function twoDTaker() {
-  let emptArr = []
+  let emptArr = [];
   for (let i = 0; i < fruits.length; i++) {
     let fruit = fruits[i];
     let findString = 0;

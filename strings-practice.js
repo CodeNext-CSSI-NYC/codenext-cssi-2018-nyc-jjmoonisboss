@@ -4,7 +4,7 @@
 
 
 function makeAbba(a, b) {
-  return a + b + b + a
+  return a + b + b + a;
 }
 
 // makeAbba("Hi", "Bye"); //→ "HiByeByeHi";
@@ -24,9 +24,9 @@ console.log(makeAbba("What", "Up"));
 // comboString("aaa", "b") → "baaab"
 function comboString(c, d) {
   if (c.length > d.length) {
-    return d + c + d
+    return d + c + d;
   } else if (d.length > c.length) {
-    return c + d + c
+    return c + d + c;
   }
 }
 
@@ -48,11 +48,11 @@ function lastTwo(str) {
   let beg = str.substring(0, str.length - );
 
   if (str.length < 2) {
-    return str
+    return str;
   } else if (str.length == 2) {
-    return end + beg
+    return end + beg;
   } else {
-    return beg + end + mid
+    return beg + end + mid;
   }
 
 
