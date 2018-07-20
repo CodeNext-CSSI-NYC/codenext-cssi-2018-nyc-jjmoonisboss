@@ -52,44 +52,37 @@ let randomInt = require('random-int');
 
 // 3. Write a function that takes in an array and returns the total number of letters
 // in all the strings in that array.
-function totalLetters(arr) {
-  let totaL = 0;
-  for (var i = 0; i < arr.length; i++) {
-    totaL = totaL + arr[i].length;
-    // arr[i].length
-  }
-  return totaL;
-}
-
-// let str = "";
-//
-//
-// for (let i = 0; i < ary.length; i++) {
-//   let letter = ary[i];
-//   if (letterCounter[letter] == undefined) {
-//     letterCounter[letter] = 1;
-//   } else {
-//     letterCounter[letter]++;
+// function totalLetters(arr) {
+//   let totaL = 0;
+//   for (var i = 0; i < arr.length; i++) {
+//     totaL = totaL + arr[i].length;
+//     // arr[i].length
 //   }
+//   return totaL;
 // }
-
-
-
 // If your function is correct, these should both print true.
-console.log(totalLetters(["a", "bc", "defg"]) == 7);
-console.log(totalLetters(["abcdefghij"]) == 10);
-
+// console.log(totalLetters(["a", "bc", "defg"]) == 7);
+// console.log(totalLetters(["abcdefghij"]) == 10);
+//
 
 
 // 4a. Write a function that takes in an array and a number and returns the index
 // at which that number FIRST appears in the array.
-function firstTime(arr, num) {
-
-}
+// function firstTime(arr, num) {
+//   for (var i = 0; i < arr.length; i++) {
+//     // arr[i].length;
+//
+//     if (arr[i] == num) {
+//       return true;
+//     }
+//   }
+//   return false;
+//
+// }
 // If your function is correct, these should both print true.
 // console.log(firstTime([2, 3, 4, 2, 5, 3, 4], 4) == 2);
 // console.log(firstTime([2, 3, 4, 2, 5, 3, 4], 3) == 1);
-
+//
 
 
 // 4b. Write a function that takes in an array and a number and returns the index
@@ -123,12 +116,17 @@ function powers(base, exponent) {
 // 6. Write a function that takes in a string called word and returns true/false
 // whether or not the word starts with L.
 function startsWithL(word) {
-
+  //console.log(word.charAt(0));
+  if (word.charAt(0) == "L" || word.charAt(0) == "l") {
+    return true;
+  } else {
+    return false;
+  }
 }
 // If your function is correct, these should print true.
-// console.log(startsWithL("Liam") == true);
-// console.log(startsWithL("orange") == false);
-// console.log(startsWithL("lion") == true);
+console.log(startsWithL("Liam") == true);
+console.log(startsWithL("orange") == false);
+console.log(startsWithL("lion") == true);
 
 
 
