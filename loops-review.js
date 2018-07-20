@@ -20,7 +20,7 @@
 // console.log("Congrats you guessed it! How did you know? What's your secret?");
 // console.log("It took you " + pswdCounter + " try(ies)!");
 
-//vine quote:  never trust someone with an anime background unless its naruto because naruto is not an anime its art
+//vine quote:  never trust someone with an anime profile pic unless its naruto because naruto is not an anime its art
 
 
 // 2. Make a for loop that prints out the numbers from 0 to 9.
