@@ -11,7 +11,7 @@ let randomInt = require('random-int');
 function lunch() {
   let cafes = ["The Mezz", "Highline", "Hemispheres", "Panorama"];
   // Your code here
-  console.log(cafes.random);
+  // console.log(cafes.random);
 }
 lunch();
 // Run your function a bunch of times and make sure all 4 of these appear, and that
@@ -26,20 +26,20 @@ lunch();
 // (Yes, I am aware that there is more nuance in actual football.)
 // If they type anything else, it prints out their total points and the program ends.
 
-function football() {
-  const readline = require("readline-sync");
-  let score = 0;
-  const tFg = readline.question("type in either touchdown or field goal: ");
-  if (tFg == "touchdown" || tFg == "td") {
-    score += 7;
-
-
-  } else if (tFg == "field goal" || tFg == "fg") {
-    score += 3;
-  }
-  console.log("Your score is " + score);
-}
-football();
+// function football() {
+//   const readline = require("readline-sync");
+//   let score = 0;
+//   const tFg = readline.question("type in either touchdown or field goal: ");
+//   if (tFg == "touchdown" || tFg == "td") {
+//     score += 7;
+//
+//
+//   } else if (tFg == "field goal" || tFg == "fg") {
+//     score += 3;
+//   }
+//   console.log("Your score is " + score);
+// }
+// football();
 
 // You can test this one yourself, since it will depend on what you type in.
 
@@ -48,14 +48,14 @@ football();
 
 // Write a function called duckDuckGoose() that prints out "Duck Duck Goose" 10 times.
 // Here is the catch: you are only allowed to type "Duck" one time in your code.
-function duckDuckGoose() {
-  for (let i = 0; i < 10; i++) {
-    let birb = "Duck ";
-    let birbs = birb + birb;
-    console.log(birbs + "Goose");
-  }
-}
-duckDuckGoose();
+// function duckDuckGoose() {
+//   for (let i = 0; i < 10; i++) {
+//     let birb = "Duck ";
+//     let birbs = birb + birb;
+//     console.log(birbs + "Goose");
+//   }
+// }
+// duckDuckGoose();
 
 // I can't test this one without looking at your code to see if you followed the rule.
 
@@ -77,18 +77,18 @@ function sameStart(arr, letter) {
 
 // Write a function that has one parameter -- a single letter --
 // and returns true if it's a capital letter.
-function isCapital(str) {
-  let cool = str.toUpperCase();
-  if (str == cool) {
-    return true;
-  } else {
-    return false;
-  }
-
-}
+// function isCapital(str) {
+//   let cool = str.toUpperCase();
+//   if (str == cool) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+//
+// }
 // These should print true
-console.log(isCapital("B") == true);
-console.log(isCapital("x") == false);
+// console.log(isCapital("B") == true);
+// console.log(isCapital("x") == false);
 
 
 
@@ -96,20 +96,20 @@ console.log(isCapital("x") == false);
 // Write a function that finds all words (in the array at the top) that have
 // the same second and third letter and returns them in an array.
 // Hint: You need to first check to make sure the word actually has three letters.
-function repeatedLetter() {
-  let secondLetter = words.length[1];
-  let thirdLetter = words.length[2];
-  for (var i = 0; i < words.length; i++) {
-    if (words <= 3) {
-      console.log("Sorry this word needs to have more letters ;^; ")
-    } else if (secondLetter == thirdLetter) {
-      return true;
-    }
-  }
-}
+// function repeatedLetter() {
+//   let secondLetter = words.length[1];
+//   let thirdLetter = words.length[2];
+//   for (var i = 0; i < words.length; i++) {
+//     if (words <= 3) {
+//       console.log("Sorry this word needs to have more letters ;^; ")
+//     } else if (secondLetter == thirdLetter) {
+//       return true;
+//     }
+//   }
+// }
 // These should print true
-console.log(repeatedLetter().includes("assessments") == true);
-console.log(repeatedLetter().includes("from") == false);
+// console.log(repeatedLetter().includes("assessments") == true);
+// console.log(repeatedLetter().includes("from") == false);
 
 
 
@@ -143,12 +143,19 @@ function oneAway(num) {
 // So in this case your function would return 6, since we had to divide by 2
 // six times to get an answer that was less than 2.
 function log2(num) {
-
+  let div = 0;
+  while (num >= 2) {
+    num /= 2;
+    div++;
+    console.log(num);
+  }
+  return div;
 }
+log2();
 // I called this log2 because this is very similar to finding "log base 2" of a number.
 // These should all print true
-// console.log(log2(100) == 6);
-// console.log(log2(1000) == 9);
+console.log(log2(100) == 6);
+console.log(log2(1000) == 9);
 
 
 

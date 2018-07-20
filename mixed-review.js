@@ -1,7 +1,7 @@
 let fs = require('fs');
 // const words = fs.readFileSync('words.txt').toString().split("\n");
 let readline = require('readline-sync');
-let randomInt = require('random-int');
+let Int = require('random-int');
 
 
 
